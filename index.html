@@ -11,13 +11,10 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Inicio de Price Comparator">
-        <span class="brand-mark">P</span><span>Price Comparator</span>
-      </a>
+      <a class="brand" href="index.html" aria-label="Inicio de Price Comparator"><span class="brand-mark">P</span><span>Price Comparator</span></a>
       <a class="nav-link" href="#how-it-works">Cómo funciona</a>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="container hero-grid">
@@ -25,66 +22,35 @@
           <p class="eyebrow">DESCUBRIMIENTO Y COMPARACIÓN DE PRODUCTOS</p>
           <h1>Encuentra el producto que buscas.<br><span>Compara el precio.</span></h1>
           <p class="hero-copy">Una forma más sencilla de descubrir productos, comparar ofertas de diferentes tiendas online y encontrar dónde comprar al mejor precio disponible.</p>
-          <div class="search-demo" role="search">
-            <input id="searchInput" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar producto">
-            <button id="searchButton" type="button">Buscar</button>
-          </div>
+          <div class="search-demo" role="search"><input id="searchInput" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar producto"><button id="searchButton" type="button">Buscar</button></div>
           <p id="searchMessage" class="search-message" aria-live="polite"></p>
         </div>
         <div class="comparison-card" aria-label="Ejemplo de comparación de precios">
-          <div class="card-top"><span>Ejemplo de comparación</span><span class="live-dot">● Concepto</span></div>
-          <div class="product-row">
-            <div class="product-icon">⌚</div>
-            <div><strong>Smartwatch</strong><small>Producto de ejemplo</small></div>
-          </div>
-          <div class="offer"><span>Tienda A</span><strong>149,99 €</strong></div>
-          <div class="offer best"><span>Tienda B <em>Mejor precio</em></span><strong>129,99 €</strong></div>
-          <div class="offer"><span>Tienda C</span><strong>139,00 €</strong></div>
-          <div class="save">Compara ofertas en un solo lugar</div>
+          <div class="card-top"><span>Ejemplo de comparación</span><span class="live-dot">● Demo</span></div>
+          <div class="product-row"><div class="product-icon">⌚</div><div><strong>Smartwatch</strong><small>Producto de ejemplo</small></div></div>
+          <div class="offer"><span>Tienda A</span><strong>149,99 €</strong></div><div class="offer best"><span>Tienda B <em>Mejor precio</em></span><strong>129,99 €</strong></div><div class="offer"><span>Tienda C</span><strong>139,00 €</strong></div><div class="save">Compara ofertas en un solo lugar</div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="categories">
+    <section class="section" id="examples">
       <div class="container">
-        <div class="section-heading"><p class="eyebrow">DISEÑADO PARA MUCHAS CATEGORÍAS</p><h2>Desde productos cotidianos hasta grandes compras.</h2></div>
-        <div class="category-grid">
-          <div class="category"><span>▣</span><h3>Electrónica</h3><p>Móviles, ordenadores, wearables y mucho más.</p></div>
-          <div class="category"><span>◇</span><h3>Moda</h3><p>Ropa, calzado, accesorios y mucho más.</p></div>
-          <div class="category"><span>△</span><h3>Deporte</h3><p>Equipamiento, ropa deportiva y productos para exterior.</p></div>
-          <div class="category"><span>□</span><h3>Hogar</h3><p>Electrodomésticos, muebles y productos para el día a día.</p></div>
-          <div class="category"><span>○</span><h3>Alimentación y cuidado</h3><p>Alimentación, cuidado personal y productos para el hogar.</p></div>
-          <div class="category category-more"><span>+</span><h3>Y mucho más</h3><p>La plataforma está diseñada para crecer en categorías y mercados.</p></div>
+        <div class="section-heading"><p class="eyebrow">EJEMPLOS DE COMPARACIÓN</p><h2>Así podría verse una búsqueda real.</h2><p>Estos productos, tiendas y precios son únicamente ilustrativos para mostrar el concepto.</p></div>
+        <div class="product-comparison-grid">
+          <article class="product-card"><div class="product-visual">📱</div><div class="product-card-body"><span class="product-category">Electrónica</span><h3>Smartphone</h3><p>Teléfono inteligente con pantalla de alta resolución y cámara avanzada.</p><div class="mini-offer"><span>Tienda A</span><strong>699,00 €</strong></div><div class="mini-offer best"><span>Tienda B <em>Mejor precio</em></span><strong>649,00 €</strong></div><div class="mini-offer"><span>Tienda C</span><strong>679,99 €</strong></div></div></article>
+          <article class="product-card"><div class="product-visual">👟</div><div class="product-card-body"><span class="product-category">Deporte</span><h3>Zapatillas de running</h3><p>Zapatillas deportivas diseñadas para ofrecer comodidad y amortiguación.</p><div class="mini-offer"><span>Tienda A</span><strong>129,99 €</strong></div><div class="mini-offer best"><span>Tienda B <em>Mejor precio</em></span><strong>109,95 €</strong></div><div class="mini-offer"><span>Tienda C</span><strong>119,90 €</strong></div></div></article>
+          <article class="product-card"><div class="product-visual">🎧</div><div class="product-card-body"><span class="product-category">Electrónica</span><h3>Auriculares inalámbricos</h3><p>Sonido inalámbrico con cancelación de ruido y estuche de carga.</p><div class="mini-offer"><span>Tienda A</span><strong>179,00 €</strong></div><div class="mini-offer best"><span>Tienda B <em>Mejor precio</em></span><strong>154,99 €</strong></div><div class="mini-offer"><span>Tienda C</span><strong>169,00 €</strong></div></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section muted" id="how-it-works">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">CÓMO FUNCIONA</p><h2>Menos búsquedas. Mejores decisiones.</h2></div>
-        <div class="steps">
-          <div class="step"><b>01</b><h3>Busca</h3><p>Empieza por el producto, modelo o tipo de artículo que necesitas.</p></div>
-          <div class="step"><b>02</b><h3>Compara</h3><p>Consulta productos, variantes y ofertas disponibles en un solo lugar.</p></div>
-          <div class="step"><b>03</b><h3>Elige</h3><p>Selecciona la oferta que mejor se adapte a tu precio y preferencias de compra.</p></div>
-        </div>
-      </div>
-    </section>
+    <section class="section" id="categories"><div class="container"><div class="section-heading"><p class="eyebrow">DISEÑADO PARA MUCHAS CATEGORÍAS</p><h2>Desde productos cotidianos hasta grandes compras.</h2></div><div class="category-grid"><div class="category"><span>▣</span><h3>Electrónica</h3><p>Móviles, ordenadores, wearables y mucho más.</p></div><div class="category"><span>◇</span><h3>Moda</h3><p>Ropa, calzado, accesorios y mucho más.</p></div><div class="category"><span>△</span><h3>Deporte</h3><p>Equipamiento, ropa deportiva y productos para exterior.</p></div><div class="category"><span>□</span><h3>Hogar</h3><p>Electrodomésticos, muebles y productos para el día a día.</p></div><div class="category"><span>○</span><h3>Alimentación y cuidado</h3><p>Alimentación, cuidado personal y productos para el hogar.</p></div><div class="category category-more"><span>+</span><h3>Y mucho más</h3><p>La plataforma está diseñada para crecer en categorías y mercados.</p></div></div></div></section>
 
-    <section class="about">
-      <div class="container about-box">
-        <div><p class="eyebrow">ACTUALMENTE EN DESARROLLO</p><h2>Una plataforma de comparación preparada para crecer.</h2></div>
-        <p>Price Comparator es un proyecto independiente actualmente en desarrollo. El enfoque inicial es el mercado español, con una arquitectura y una visión de producto preparadas para incorporar otros mercados en el futuro.</p>
-      </div>
-    </section>
+    <section class="section muted" id="how-it-works"><div class="container"><div class="section-heading"><p class="eyebrow">CÓMO FUNCIONA</p><h2>Menos búsquedas. Mejores decisiones.</h2></div><div class="steps"><div class="step"><b>01</b><h3>Busca</h3><p>Empieza por el producto, modelo o tipo de artículo que necesitas.</p></div><div class="step"><b>02</b><h3>Compara</h3><p>Consulta productos, variantes y ofertas disponibles en un solo lugar.</p></div><div class="step"><b>03</b><h3>Elige</h3><p>Selecciona la oferta que mejor se adapte a tu precio y preferencias de compra.</p></div></div></div></section>
+
+    <section class="about"><div class="container about-box"><div><p class="eyebrow">ACTUALMENTE EN DESARROLLO</p><h2>Una plataforma de comparación preparada para crecer.</h2></div><p>Price Comparator es un proyecto independiente actualmente en desarrollo. El enfoque inicial es el mercado español, con una arquitectura y una visión de producto preparadas para incorporar otros mercados en el futuro.</p></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><strong>Price Comparator</strong><p>Descubrimiento de productos y comparación de precios.</p></div>
-      <div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div>
-    </div>
-    <div class="container copyright">© 2026 Price Comparator. Proyecto actualmente en desarrollo.</div>
-  </footer>
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>Price Comparator</strong><p>Descubrimiento de productos y comparación de precios.</p></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div></div><div class="container copyright">© 2026 Price Comparator. Proyecto actualmente en desarrollo.</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
