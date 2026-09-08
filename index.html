@@ -4,53 +4,91 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Concepto de una plataforma de comparación de productos de pádel actualmente en desarrollo.">
-  <title>Price Comparator — Compara productos de pádel</title>
+  <meta name="description" content="Price Comparator facilita el descubrimiento de productos de pádel y la comparación de ofertas entre tiendas online.">
+  <title>Price Comparator — Encuentra y compara productos de pádel</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Inicio de Price Comparator"><span class="brand-mark">P</span><span>Price Comparator</span></a>
-      <a class="nav-link" href="#how-it-works">Cómo funciona</a>
+      <nav><a class="nav-link" href="#categories">Categorías</a><a class="nav-link" href="#how-it-works">Cómo funciona</a></nav>
     </div>
   </header>
+
   <main>
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">DESCUBRIMIENTO Y COMPARACIÓN DE PRODUCTOS DE PÁDEL</p>
-          <h1>Encuentra tu material de pádel.<br><span>Compara el precio.</span></h1>
-          <p class="hero-copy">Una forma más sencilla de descubrir palas, zapatillas, textil y accesorios de pádel, comparar ofertas de diferentes tiendas online y encontrar dónde comprar al mejor precio disponible.</p>
-          <div class="search-demo" role="search"><input id="searchInput" type="search" placeholder="¿Qué buscas? Ej. pala de pádel" aria-label="Buscar producto de pádel"><button id="searchButton" type="button">Buscar</button></div>
+          <p class="eyebrow">COMPARACIÓN DE PRODUCTOS</p>
+          <h1>Encuentra lo que buscas.<br><span>Compara antes de comprar.</span></h1>
+          <p class="hero-copy">Descubre productos de pádel, compara sus características y encuentra las mejores ofertas disponibles entre diferentes tiendas online.</p>
+          <div class="search-demo" role="search">
+            <span class="search-icon">⌕</span>
+            <input id="searchInput" type="search" placeholder="Busca un producto, marca o necesidad" aria-label="Buscar producto">
+            <button id="searchButton" type="button">Buscar</button>
+          </div>
           <p id="searchMessage" class="search-message" aria-live="polite"></p>
+          <div class="trust-row"><span>✓ Comparación de ofertas</span><span>✓ Productos y variantes</span><span>✓ Enfoque inicial: España</span></div>
         </div>
-        <div class="comparison-card" aria-label="Ejemplo de comparación de precios de una pala de pádel">
-          <div class="card-top"><span>Ejemplo de comparación</span><span class="live-dot">● Demo</span></div>
-          <div class="product-row"><div class="product-icon">🎾</div><div><strong>Pala de pádel</strong><small>Producto de ejemplo</small></div></div>
-          <div class="offer"><span>Tienda A</span><strong>249,99 €</strong></div><div class="offer best"><span>Tienda B <em>Mejor precio</em></span><strong>219,99 €</strong></div><div class="offer"><span>Tienda C</span><strong>229,00 €</strong></div><div class="save">Compara ofertas de pádel en un solo lugar</div>
+
+        <div class="comparison-card" aria-label="Vista previa de una comparación de ofertas">
+          <div class="card-top"><span>Comparación</span><span class="status"><i></i> Preparado para comparar</span></div>
+          <div class="product-row"><div class="product-icon">⌁</div><div><strong>Pala de pádel</strong><small>Potencia · Control · Nivel de juego</small></div></div>
+          <div class="offer"><div><span>Oferta 01</span><small>Disponible</small></div><strong>249,99 €</strong></div>
+          <div class="offer best"><div><span>Oferta destacada <em>Mejor precio</em></span><small>Disponible</small></div><strong>219,99 €</strong></div>
+          <div class="offer"><div><span>Oferta 03</span><small>Disponible</small></div><strong>229,00 €</strong></div>
+          <div class="card-note">Compara precio, disponibilidad y características antes de elegir.</div>
         </div>
       </div>
     </section>
 
     <section class="section" id="examples">
       <div class="container">
-        <div class="section-heading"><p class="eyebrow">EJEMPLOS DE COMPARACIÓN</p><h2>Compara todo tu material de pádel.</h2><p>Estos productos, tiendas y precios son únicamente ilustrativos para mostrar el concepto.</p></div>
+        <div class="section-heading"><p class="eyebrow">EXPLORA EL CATÁLOGO</p><h2>Una búsqueda. Varias opciones.</h2><p>La plataforma está pensada para reunir productos, variantes y ofertas en una misma experiencia de compra.</p></div>
         <div class="product-comparison-grid">
-          <article class="product-card"><div class="product-visual">🎾</div><div class="product-card-body"><span class="product-category">Palas de pádel</span><h3>Pala de pádel</h3><p>Pala de pádel de alto rendimiento para jugadores que buscan potencia y control.</p><div class="mini-offer"><span>Tienda A</span><strong>249,99 €</strong></div><div class="mini-offer best"><span>Tienda B <em>Mejor precio</em></span><strong>219,99 €</strong></div><div class="mini-offer"><span>Tienda C</span><strong>229,00 €</strong></div></div></article>
-          <article class="product-card"><div class="product-visual">👟</div><div class="product-card-body"><span class="product-category">Zapatillas de pádel</span><h3>Zapatillas de pádel</h3><p>Calzado de pádel diseñado para ofrecer estabilidad, agarre y comodidad en pista.</p><div class="mini-offer"><span>Tienda A</span><strong>119,99 €</strong></div><div class="mini-offer best"><span>Tienda B <em>Mejor precio</em></span><strong>99,95 €</strong></div><div class="mini-offer"><span>Tienda C</span><strong>109,90 €</strong></div></div></article>
-          <article class="product-card"><div class="product-visual">🎒</div><div class="product-card-body"><span class="product-category">Accesorios de pádel</span><h3>Paletero de pádel</h3><p>Paletero con compartimentos para pala, zapatillas, ropa y accesorios.</p><div class="mini-offer"><span>Tienda A</span><strong>89,00 €</strong></div><div class="mini-offer best"><span>Tienda B <em>Mejor precio</em></span><strong>74,99 €</strong></div><div class="mini-offer"><span>Tienda C</span><strong>82,50 €</strong></div></div></article>
+          <article class="product-card"><div class="product-visual racket">⌁</div><div class="product-card-body"><span class="product-category">Palas de pádel</span><h3>Palas para distintos estilos de juego</h3><p>Compara forma, balance, peso y otras características para encontrar la pala que encaje contigo.</p><div class="product-meta"><span>Potencia</span><span>Control</span><span>Balance</span></div><div class="from-price">Desde <strong>219,99 €</strong></div></div></article>
+          <article class="product-card"><div class="product-visual shoe">◇</div><div class="product-card-body"><span class="product-category">Zapatillas de pádel</span><h3>Estabilidad y agarre en pista</h3><p>Consulta modelos, tallas, colores y ofertas para comparar el calzado disponible.</p><div class="product-meta"><span>Agarre</span><span>Estabilidad</span><span>Comodidad</span></div><div class="from-price">Desde <strong>99,95 €</strong></div></div></article>
+          <article class="product-card"><div class="product-visual bag">□</div><div class="product-card-body"><span class="product-category">Paleteros y bolsas</span><h3>Todo tu material en un solo lugar</h3><p>Encuentra diferentes capacidades, diseños y opciones de transporte para tu equipamiento.</p><div class="product-meta"><span>Capacidad</span><span>Compartimentos</span><span>Diseño</span></div><div class="from-price">Desde <strong>74,99 €</strong></div></div></article>
+        </div>
+        <p class="catalog-note">* Los precios mostrados en esta página son orientativos y forman parte de la presentación del proyecto.</p>
+      </div>
+    </section>
+
+    <section class="section muted" id="categories">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">PÁDEL</p><h2>Encuentra el equipamiento que necesitas.</h2></div>
+        <div class="category-grid">
+          <a class="category" href="#examples"><span>01</span><h3>Palas</h3><p>Potencia, control, forma, balance, peso y nivel de juego.</p></a>
+          <a class="category" href="#examples"><span>02</span><h3>Zapatillas</h3><p>Agarre, estabilidad, comodidad, talla y superficie.</p></a>
+          <a class="category" href="#examples"><span>03</span><h3>Ropa</h3><p>Camisetas, pantalones, faldas y prendas deportivas.</p></a>
+          <a class="category" href="#examples"><span>04</span><h3>Paleteros</h3><p>Capacidad, compartimentos y opciones de transporte.</p></a>
+          <a class="category" href="#examples"><span>05</span><h3>Pelotas</h3><p>Opciones para entrenamiento, competición y diferentes ritmos.</p></a>
+          <a class="category category-more" href="#how-it-works"><span>+</span><h3>Más categorías</h3><p>Arquitectura preparada para ampliar el catálogo a otros productos y mercados.</p></a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="categories"><div class="container"><div class="section-heading"><p class="eyebrow">CATEGORÍAS DE PÁDEL</p><h2>Encuentra y compara tu equipamiento.</h2></div><div class="category-grid"><div class="category"><span>◉</span><h3>Palas de pádel</h3><p>Palas para diferentes niveles, estilos de juego y preferencias.</p></div><div class="category"><span>◇</span><h3>Zapatillas de pádel</h3><p>Calzado de pádel para pista, estabilidad y agarre.</p></div><div class="category"><span>△</span><h3>Ropa de pádel</h3><p>Camisetas, pantalones, faldas y prendas deportivas.</p></div><div class="category"><span>□</span><h3>Paleteros y bolsas</h3><p>Paleteros, mochilas y bolsas para transportar tu material.</p></div><div class="category"><span>○</span><h3>Accesorios</h3><p>Pelotas, grips, protectores y otros accesorios de pádel.</p></div><div class="category category-more"><span>+</span><h3>Y mucho más</h3><p>La plataforma está diseñada para ampliar productos y mercados.</p></div></div></div></section>
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">CÓMO FUNCIONA</p><h2>De la búsqueda a la mejor opción.</h2></div>
+        <div class="steps">
+          <div class="step"><b>01</b><h3>Busca</h3><p>Introduce un producto, una marca o una necesidad de compra.</p></div>
+          <div class="step"><b>02</b><h3>Compara</h3><p>Consulta productos, variantes, características, disponibilidad y ofertas.</p></div>
+          <div class="step"><b>03</b><h3>Elige</h3><p>Compara las opciones y accede a la tienda que mejor se adapte a tu compra.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <section class="section muted" id="how-it-works"><div class="container"><div class="section-heading"><p class="eyebrow">CÓMO FUNCIONA</p><h2>Menos búsquedas. Mejores decisiones.</h2></div><div class="steps"><div class="step"><b>01</b><h3>Busca</h3><p>Busca una pala, zapatillas, ropa o cualquier producto de pádel.</p></div><div class="step"><b>02</b><h3>Compara</h3><p>Consulta productos, variantes, tallas y ofertas disponibles en un solo lugar.</p></div><div class="step"><b>03</b><h3>Elige</h3><p>Selecciona la oferta que mejor se adapte a tu precio y preferencias de compra.</p></div></div></div></section>
-
-    <section class="about"><div class="container about-box"><div><p class="eyebrow">ACTUALMENTE EN DESARROLLO</p><h2>Una plataforma de comparación especializada en pádel.</h2></div><p>Price Comparator es un proyecto independiente actualmente en desarrollo. El enfoque inicial es comparar productos de pádel en el mercado español, con una arquitectura preparada para incorporar otras categorías y mercados en el futuro.</p></div></section>
+    <section class="about">
+      <div class="container about-box">
+        <div><p class="eyebrow">PROYECTO EN DESARROLLO</p><h2>Construyendo una forma más sencilla de comparar productos.</h2></div>
+        <div><p>Price Comparator es un proyecto independiente que comienza en el mercado español con el objetivo de facilitar el descubrimiento y comparación de productos online.</p><p>El catálogo inicial se centra en pádel, con una arquitectura preparada para incorporar nuevas categorías, fuentes comerciales y mercados.</p><div class="about-points"><span>Catálogo estructurado</span><span>Variantes de producto</span><span>Comparación de ofertas</span></div></div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><strong>Price Comparator</strong><p>Descubrimiento y comparación de productos de pádel.</p></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div></div><div class="container copyright">© 2026 Price Comparator. Proyecto actualmente en desarrollo.</div></footer>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><strong>Price Comparator</strong><p>Descubrimiento y comparación de productos.</p></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div></div><div class="container copyright">© 2026 Price Comparator · Proyecto en desarrollo</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
