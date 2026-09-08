@@ -2,14 +2,14 @@ const input = document.getElementById('searchInput');
 const button = document.getElementById('searchButton');
 const message = document.getElementById('searchMessage');
 
-function runDemoSearch() {
+function runSearch() {
   const value = input.value.trim();
   message.textContent = value
-    ? `Demo search for “${value}” — live product data will be connected during development.`
-    : 'Enter a product name to try the search concept.';
+    ? `Buscando opciones para “${value}”… La conexión con fuentes de producto se incorporará durante el desarrollo.`
+    : 'Introduce un producto, una marca o lo que necesitas encontrar.';
 }
 
-button.addEventListener('click', runDemoSearch);
+button.addEventListener('click', runSearch);
 input.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') runDemoSearch();
+  if (event.key === 'Enter') runSearch();
 });
