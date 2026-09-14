@@ -5,90 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
   <meta name="description" content="Price Comparator facilita el descubrimiento de productos de pádel y la comparación de ofertas entre tiendas online.">
-  <title>Price Comparator — Encuentra y compara productos de pádel</title>
+  <title>Price Comparator — Compara productos de pádel</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html" aria-label="Inicio de Price Comparator"><span class="brand-mark">P</span><span>Price Comparator</span></a>
-      <nav><a class="nav-link" href="#categories">Categorías</a><a class="nav-link" href="#examples">Productos</a><a class="nav-link" href="#how-it-works">Cómo funciona</a></nav>
+      <nav>
+        <a href="#categories">Categorías</a>
+        <a href="#popular">Productos</a>
+        <a href="#how-it-works">Cómo funciona</a>
+      </nav>
+      <a class="header-cta" href="#categories">Explorar</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">COMPARACIÓN DE PRODUCTOS DE PÁDEL</p>
-          <h1>Encuentra lo que buscas.<br><span>Compara antes de comprar.</span></h1>
-          <p class="hero-copy">Descubre productos de pádel, compara sus características y encuentra las mejores ofertas disponibles entre diferentes tiendas online.</p>
-          <div class="search-demo" role="search">
-            <span class="search-icon">⌕</span>
-            <input id="searchInput" type="search" placeholder="Busca una pala, zapatillas, paletero..." aria-label="Buscar producto">
-            <button id="searchButton" type="button">Buscar</button>
+      <div class="container hero-inner">
+        <div class="eyebrow">COMPARADOR DE PRODUCTOS</div>
+        <h1>Busca. Compara. <span>Elige mejor.</span></h1>
+        <p class="hero-copy">Encuentra productos de pádel y compara precios, características y tiendas antes de comprar.</p>
+        <div class="search-demo" role="search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="¿Qué estás buscando? Ej. Bullpadel Vertex 05" aria-label="Buscar producto">
+          <button id="searchButton" type="button">Buscar</button>
+        </div>
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+        <div class="popular-searches"><span>También puedes buscar:</span><a href="#popular">Palas</a><a href="#popular">Zapatillas</a><a href="#popular">Paleteros</a><a href="#popular">Ropa</a></div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-heading compact"><div><div class="eyebrow">EXPLORA</div><h2>Compra por categoría</h2></div><p>Empieza por el producto que buscas.</p></div>
+        <div class="category-grid">
+          <a class="category-card" href="#popular"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Palas de pádel" loading="lazy"><div><strong>Palas</strong><span>Comparar palas →</span></div></a>
+          <a class="category-card" href="#popular"><img src="https://www.joma-sport.com/dw/image/v2/BFRV_PRD/on/demandware.static/-/Sites-joma-masterCatalog/default/dw950807a0/images/medium/TOPEW2572OM_4.jpg?sh=900&sm=fit&sw=900" alt="Zapatillas de pádel" loading="lazy"><div><strong>Zapatillas</strong><span>Ver opciones →</span></div></a>
+          <a class="category-card" href="#popular"><img src="https://pdlclothing.myshopify.com/cdn/shop/files/CEB9BDFB-CBEC-4620-A951-10B0983025C0.jpg?v=1754602779&width=800" alt="Ropa de pádel" loading="lazy"><div><strong>Ropa</strong><span>Ver opciones →</span></div></a>
+          <a class="category-card" href="#popular"><img src="https://goldenpadel.co.uk/cdn/shop/files/freepik__create-a-highresolution-lifestyle-photo-of-a-padel__31922.png?v=1771792918&width=1000" alt="Paleteros de pádel" loading="lazy"><div><strong>Paleteros</strong><span>Ver opciones →</span></div></a>
+          <a class="category-card" href="#popular"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Accesorios de pádel" loading="lazy"><div><strong>Accesorios</strong><span>Ver opciones →</span></div></a>
+          <a class="category-card more-card" href="#how-it-works"><div class="more-icon">+</div><div><strong>Más categorías</strong><span>Próximamente →</span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section comparison-section" id="popular">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow">EJEMPLO</div><h2>Una comparación de un vistazo</h2></div><p>Así puede verse un producto cuando se comparan sus ofertas.</p></div>
+        <div class="comparison-panel">
+          <div class="product-summary">
+            <div class="product-image-large"><img src="https://cdn.idealo.com/folder/Product/208410/4/208410436/s11_produktbild_klein/bullpadel-vertex-05-2026.jpg" alt="Bullpadel Vertex 05 2026"></div>
+            <div class="product-summary-info">
+              <span class="brand-label">BULLPADEL</span>
+              <h3>Vertex 05 2026</h3>
+              <p>Pala de pádel · Forma diamante · 365–375 g</p>
+              <div class="specs"><span>Carbono</span><span>Balance alto</span><span>Nivel avanzado</span></div>
+              <a class="view-product" href="#">Ver producto completo →</a>
+            </div>
+            <div class="price-highlight"><small>Desde</small><strong>190,00 €</strong><span>3 ofertas</span></div>
           </div>
-          <p id="searchMessage" class="search-message" aria-live="polite"></p>
-          <div class="trust-row"><span>✓ Comparación de ofertas</span><span>✓ Productos y variantes</span><span>✓ Enfoque inicial: España</span></div>
-        </div>
-
-        <div class="comparison-card" aria-label="Vista previa de una comparación de ofertas">
-          <div class="card-top"><span>Comparación</span><span class="status"><i></i> 3 ofertas encontradas</span></div>
-          <div class="hero-product"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Pala de pádel" loading="lazy"><div><strong>Bullpadel Vertex 05</strong><small>Diamante · 365–375 g · Carbono</small></div></div>
-          <div class="mini-offer best"><div><span>Padel Nuestro <em>Mejor precio</em></span><small>Envío gratis</small></div><b>190,00 €</b><span class="rank">1</span></div>
-          <div class="mini-offer"><div><span>Amazon</span><small>Envío gratis</small></div><b>199,00 €</b><span class="rank">2</span></div>
-          <div class="mini-offer"><div><span>Bullpadel</span><small>Precio oficial</small></div><b>249,99 €</b><span class="rank">3</span></div>
-          <div class="card-note">Ejemplo de comparación. Los precios y la disponibilidad pueden cambiar.</div>
+          <div class="offers-head"><strong>Ofertas disponibles</strong><span>Ordenadas por precio</span></div>
+          <div class="offer-row best"><div class="store"><strong>Padel Nuestro</strong><span class="best-label">MEJOR PRECIO</span><small>Envío gratis · En stock</small></div><strong class="offer-price">190,00 €</strong><span class="total">Total 190,00 €</span><a class="offer-button" href="#">Ver oferta</a></div>
+          <div class="offer-row"><div class="store"><strong>Amazon</strong><small>Envío gratis · En stock</small></div><strong class="offer-price">199,00 €</strong><span class="total">Total 199,00 €</span><a class="offer-button" href="#">Ver oferta</a></div>
+          <div class="offer-row"><div class="store"><strong>Bullpadel</strong><small>Precio oficial · En stock</small></div><strong class="offer-price">249,99 €</strong><span class="total">Total 249,99 €</span><a class="offer-button secondary" href="#">Ver oferta</a></div>
+          <div class="comparison-foot">Ejemplo visual del proyecto. Los precios, el stock y las condiciones pueden cambiar.</div>
         </div>
       </div>
     </section>
 
-    <section class="section white" id="categories">
+    <section class="section products-section">
       <div class="container">
-        <div class="section-heading"><p class="eyebrow">CATEGORÍAS</p><h2>Todo el equipamiento de pádel, en un mismo sitio.</h2><p>Explora cada categoría y compara productos, características, variantes y precios.</p></div>
-        <div class="category-grid category-photo-grid">
-          <a class="category category-photo" href="#examples"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Palas de pádel" loading="lazy"><div class="category-body"><span>01</span><h3>Palas</h3><p>Potencia, control, forma, balance, peso y nivel de juego.</p></div></a>
-          <a class="category category-photo" href="#examples"><img src="https://www.joma-sport.com/dw/image/v2/BFRV_PRD/on/demandware.static/-/Sites-joma-masterCatalog/default/dw950807a0/images/medium/TOPEW2572OM_4.jpg?sh=900&sm=fit&sw=900" alt="Zapatillas de pádel" loading="lazy"><div class="category-body"><span>02</span><h3>Zapatillas</h3><p>Agarre, estabilidad, comodidad, talla y superficie.</p></div></a>
-          <a class="category category-photo" href="#examples"><img src="https://pdlclothing.myshopify.com/cdn/shop/files/CEB9BDFB-CBEC-4620-A951-10B0983025C0.jpg?v=1754602779&width=800" alt="Ropa de pádel" loading="lazy"><div class="category-body"><span>03</span><h3>Ropa</h3><p>Camisetas, pantalones, faldas y prendas deportivas.</p></div></a>
-          <a class="category category-photo" href="#examples"><img src="https://goldenpadel.co.uk/cdn/shop/files/freepik__create-a-highresolution-lifestyle-photo-of-a-padel__31922.png?v=1771792918&width=1000" alt="Paletero de pádel" loading="lazy"><div class="category-body"><span>04</span><h3>Paleteros</h3><p>Capacidad, compartimentos y opciones de transporte.</p></div></a>
-          <a class="category category-photo" href="#examples"><img src="https://www.pexels.com/photo/padel-racket-and-ball-on-blue-court-surface-31012869/" alt="Pelotas y accesorios de pádel" loading="lazy" onerror="this.style.display='none'"><div class="category-body"><span>05</span><h3>Pelotas y accesorios</h3><p>Pelotas, grips, protectores y otros accesorios para tu equipo.</p></div></a>
-          <a class="category category-photo category-more" href="#how-it-works"><div class="category-more-icon">+</div><div class="category-body"><span>06</span><h3>Más categorías</h3><p>Arquitectura preparada para ampliar el catálogo a otros productos y mercados.</p></div></a>
+        <div class="section-heading compact"><div><div class="eyebrow">PRODUCTOS DESTACADOS</div><h2>Descubre productos</h2></div><a class="section-link" href="#">Ver todos →</a></div>
+        <div class="product-grid">
+          <article class="product-card"><div class="product-photo"><img src="https://cdn.idealo.com/folder/Product/208410/4/208410436/s11_produktbild_klein/bullpadel-vertex-05-2026.jpg" alt="Bullpadel Vertex 05 2026" loading="lazy"></div><div class="product-body"><span class="product-brand">BULLPADEL</span><h3>Vertex 05 2026</h3><div class="product-tags"><span>Diamante</span><span>365–375 g</span></div><div class="product-price"><small>Desde</small><strong>190,00 €</strong></div></div></article>
+          <article class="product-card"><div class="product-photo"><img src="https://contents.mediadecathlon.com/p3049208/k%24a5c9f7a8a91e476b69bb7bdadc20023f/picture.jpg?f=3000x0&format=auto" alt="NOX AT10 Genius 12K Alum XTREM 26" loading="lazy"></div><div class="product-body"><span class="product-brand">NOX</span><h3>AT10 Genius 12K Alum XTREM 26</h3><div class="product-tags"><span>Lágrima</span><span>360–375 g</span></div><div class="product-price"><small>Desde</small><strong>195,49 €</strong></div></div></article>
+          <article class="product-card"><div class="product-photo"><img src="https://cdn.idealo.com/folder/Product/205546/0/205546047/s11_produktbild_klein/adidas-metalbone-carbon-3-4.jpg" alt="adidas Metalbone Carbon 3.4" loading="lazy"></div><div class="product-body"><span class="product-brand">ADIDAS</span><h3>Metalbone Carbon 3.4</h3><div class="product-tags"><span>Diamante</span><span>Carbono</span></div><div class="product-price"><small>Desde</small><strong>127,53 €</strong></div></div></article>
         </div>
+        <p class="catalog-note">Precios de referencia consultados el 13/09/2026. Esta página es una demo del proyecto y no representa ofertas propias.</p>
       </div>
     </section>
 
-    <section class="section muted" id="examples">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">PRODUCTOS REALES</p><h2>Compara antes de decidir.</h2><p>Una muestra de cómo podría presentar Price Comparator productos reales, sus características y precios de referencia.</p></div>
-        <div class="product-comparison-grid">
-          <article class="product-card"><div class="product-photo"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Bullpadel Vertex 05" loading="lazy"></div><div class="product-card-body"><span class="product-category">Bullpadel</span><h3>Vertex 05 (2026)</h3><p>Pala de nivel profesional, forma diamante, 365–375 g y carbono.</p><div class="product-meta"><span>Diamante</span><span>365–375 g</span><span>Carbono</span></div><div class="from-price">Desde <strong>190,00 €</strong></div></div></article>
-          <article class="product-card"><div class="product-photo"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="NOX AT10 Genius 12K Alum XTREM 26" loading="lazy"></div><div class="product-card-body"><span class="product-category">NOX · Agustín Tapia</span><h3>AT10 Genius 12K Alum XTREM 26</h3><p>Pala de nivel profesional, 360–375 g, forma lágrima y carbono.</p><div class="product-meta"><span>Lágrima</span><span>360–375 g</span><span>Carbono</span></div><div class="from-price">Desde <strong>195,49 €</strong></div></div></article>
-          <article class="product-card"><div class="product-photo"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="adidas Metalbone Carbon 3.4" loading="lazy"></div><div class="product-card-body"><span class="product-category">adidas · Metalbone</span><h3>Metalbone Carbon 3.4</h3><p>Pala de nivel profesional, forma diamante, balance alto y carbono.</p><div class="product-meta"><span>Diamante</span><span>Balance alto</span><span>Carbono</span></div><div class="from-price">Desde <strong>127,53 €</strong></div></div></article>
-        </div>
-        <p class="catalog-note">Precios de referencia consultados el 13/09/2026 en fuentes públicas. Pueden cambiar según tienda, stock, promociones y gastos de envío. Esta página es una demo del proyecto y no representa ofertas propias.</p>
+    <section class="how-section" id="how-it-works">
+      <div class="container how-grid">
+        <div><div class="eyebrow">CÓMO FUNCIONA</div><h2>Menos tiempo buscando.<br>Más tiempo eligiendo.</h2></div>
+        <div class="how-steps"><div><b>01</b><strong>Busca</strong><p>Encuentra un producto, una marca o una categoría.</p></div><div><b>02</b><strong>Compara</strong><p>Consulta precios, características, variantes y tiendas.</p></div><div><b>03</b><strong>Elige</strong><p>Accede a la oferta que mejor encaje con lo que buscas.</p></div></div>
       </div>
     </section>
 
-    <section class="section white" id="how-it-works">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">CÓMO FUNCIONA</p><h2>De la búsqueda a la mejor opción.</h2></div>
-        <div class="steps">
-          <div class="step"><b>01</b><h3>Busca</h3><p>Introduce un producto, una marca o una necesidad de compra.</p></div>
-          <div class="step"><b>02</b><h3>Compara</h3><p>Consulta productos, variantes, características, disponibilidad y ofertas.</p></div>
-          <div class="step"><b>03</b><h3>Elige</h3><p>Compara las opciones y accede a la tienda que mejor se adapte a tu compra.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="container about-box">
-        <div><p class="eyebrow">PROYECTO EN DESARROLLO</p><h2>Construyendo una forma más sencilla de comparar productos.</h2></div>
-        <div><p>Price Comparator es un proyecto independiente que comienza en el mercado español con el objetivo de facilitar el descubrimiento y comparación de productos online.</p><p>El catálogo inicial se centra en pádel, con una arquitectura preparada para incorporar nuevas categorías, fuentes comerciales y mercados.</p><div class="about-points"><span>Catálogo estructurado</span><span>Variantes de producto</span><span>Comparación de ofertas</span></div></div>
-      </div>
-    </section>
+    <footer class="site-footer"><div class="container footer-top"><div><a class="brand" href="index.html"><span class="brand-mark">P</span><span>Price Comparator</span></a><p>Descubrimiento y comparación de productos.</p></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div></div><div class="container copyright">© 2026 Price Comparator · Proyecto en desarrollo</div></footer>
   </main>
-
-  <footer class="site-footer"><div class="container footer-grid"><div><strong>Price Comparator</strong><p>Descubrimiento y comparación de productos.</p></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div></div><div class="container copyright">© 2026 Price Comparator · Proyecto en desarrollo</div></footer>
   <script src="script.js"></script>
 </body>
 </html>
