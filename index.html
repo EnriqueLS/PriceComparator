@@ -1,126 +1,70 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+<html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-<title>Kalisia | Radar y Comparador de Ofertas de Pádel</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            "on-primary": "#ffffff", "surface": "#f9f9ff", "background": "#f9f9ff",
-            "inverse-surface": "#29313f", "secondary": "#006c46", "primary": "#0040df",
-            "on-surface": "#141c29", "outline-variant": "#c4c5d9", "outline": "#747688"
-          }
-        }
-      }
-    }
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Kalisia | Comparador de precios de pádel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; line-height: 1; }
+body{font-family:'Plus Jakarta Sans',sans-serif}.material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:500;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr}
 </style>
 </head>
-<body class="bg-background text-on-surface font-sans antialiased min-h-screen pb-24 selection:bg-primary selection:text-on-primary">
-
-<!-- TOP APP BAR -->
-<header class="fixed top-0 left-0 w-full z-50 flex flex-col bg-inverse-surface text-on-primary px-4 py-2.5 shadow-md">
-<div class="flex items-center justify-between w-full">
-<div class="flex items-center gap-2">
-<div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
-<span class="material-symbols-outlined text-lg">sports_tennis</span>
-</div>
-<div class="flex flex-col">
-<div class="flex items-center gap-1">
-<span class="text-lg font-extrabold tracking-tight leading-none">Kalisia</span>
-<span class="bg-primary/30 text-blue-200 border border-blue-400/30 text-[9px] font-extrabold px-1.5 py-0.5 rounded-full uppercase">Radar</span>
-</div>
-<span class="text-[10px] text-slate-400 tracking-wide">PADEL PRICE RADAR</span>
-</div>
-</div>
-<div class="bg-slate-800 text-slate-200 px-2 py-1 rounded-lg text-xs font-semibold border border-slate-700">EUR</div>
-</div>
-<div class="flex items-center gap-1.5 mt-2 pt-2 border-t border-slate-700/60">
-<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-<p class="text-[11px] text-slate-300 truncate">Buscador en <strong class="text-white font-bold">28 tiendas verificadas</strong></p>
-</div>
-</header>
-<div class="h-24"></div>
-
-<main class="max-w-md mx-auto px-4 space-y-4">
-<!-- CATEGORY CHIPS HORIZONTAL SCROLL -->
-<div class="flex items-center gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 py-1">
-  <a href="index.html" class="shrink-0 bg-inverse-surface text-on-primary px-3.5 py-2 rounded-xl text-xs font-semibold shadow-sm">Destacados</a>
-  <a href="palas.html" class="shrink-0 bg-white border border-outline-variant text-slate-700 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-slate-50">Palas (948)</a>
-  <a href="calzado.html" class="shrink-0 bg-white border border-outline-variant text-slate-700 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-slate-50">Zapatillas (312)</a>
-  <a href="pelotas.html" class="shrink-0 bg-white border border-outline-variant text-slate-700 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-slate-50">Pelotas (84)</a>
-</div>
-
-<!-- PRODUCT CARD HOME -->
-<section class="space-y-4">
-  <article class="bg-white rounded-2xl border border-outline-variant p-4 shadow-sm space-y-3.5">
-    <div class="flex items-center justify-between">
-      <span class="inline-flex items-center gap-1 text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
-        <span class="material-symbols-outlined text-xs text-primary">storefront</span> En 14 tiendas
-      </span>
-      <span class="bg-rose-100 text-rose-700 font-bold text-xs px-2 py-0.5 rounded-full">-28%</span>
-    </div>
-    <div class="grid grid-cols-3 gap-3 items-center">
-      <div class="col-span-1 bg-slate-50 rounded-xl p-2 flex items-center justify-center h-28 border border-slate-100">
-        <img class="max-h-full object-contain drop-shadow" src="https://images.unsplash.com/photo-1617083553728-4ad22e3ae7dc?w=400&auto=format&fit=crop&q=80" alt="Pala"/>
-      </div>
-      <div class="col-span-2 space-y-1">
-        <div class="text-[11px] font-bold text-primary">BULLPADEL • Pro Line</div>
-        <h3 class="text-sm font-bold text-slate-900 leading-tight">Bullpadel Hack 03 2024</h3>
-      </div>
-    </div>
-    <div class="bg-slate-50 rounded-xl p-2.5 flex items-center justify-between border border-slate-200">
-      <div>
-        <span class="text-base text-secondary font-extrabold">189,95 €</span>
-        <span class="text-xs line-through text-slate-400 ml-1">265,00 €</span>
-      </div>
-      <span class="text-xs font-bold text-slate-800">Padel Nuestro</span>
-    </div>
-    <a href="producto.html" class="w-full h-11 bg-primary text-on-primary rounded-xl font-semibold text-xs shadow-sm flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors">
-      <span>Comparar 14 tiendas</span>
-      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<body class="bg-slate-50 text-slate-900 antialiased">
+<header class="bg-slate-950 text-white">
+  <div class="max-w-6xl mx-auto px-5 sm:px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center"><span class="material-symbols-outlined">sports_tennis</span></span>
+      <span><strong class="text-xl tracking-tight">Kalisia</strong><small class="block text-[10px] text-slate-400 tracking-[.18em]">PADEL PRICE RADAR</small></span>
     </a>
-  </article>
-</section>
+    <span class="hidden sm:block text-xs text-slate-400">Demo de comparador</span>
+  </div>
+</header>
 
-<!-- FOOTER COMPLIANCE AWIN -->
-<footer class="pt-4 pb-4 space-y-2 border-t border-slate-200 text-center">
-<p class="text-[10px] text-slate-500 px-2 leading-tight">
-  <strong>Divulgación de Afiliación:</strong> Kalisia participa en redes de marketing de afiliación (Awin y CJ Affiliate). Recibimos comisiones por compras sin coste extra para ti.
-</p>
-<p class="text-[11px] text-slate-500">Kalisia: Motor independiente de auditoría de precios.</p>
-</footer>
+<main class="max-w-6xl mx-auto px-5 sm:px-6 py-8 sm:py-12">
+  <section class="max-w-3xl">
+    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Comparación de precios</span>
+    <h1 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">Encuentra una oferta de pádel sin tener que buscar tienda por tienda.</h1>
+    <p class="mt-4 text-slate-600 text-sm sm:text-base max-w-2xl">Una demostración de cómo Kalisia podrá reunir productos y ofertas de distintas tiendas en un solo lugar.</p>
+    <div class="mt-7 flex gap-2 bg-white border border-slate-200 rounded-2xl p-2 shadow-sm max-w-2xl">
+      <span class="material-symbols-outlined text-slate-400 self-center ml-2">search</span>
+      <input aria-label="Buscar producto" class="w-full outline-none text-sm bg-transparent px-2" placeholder="Ej.: Bullpadel Vertex 05, zapatillas de pádel..." disabled>
+      <button class="hidden sm:block bg-blue-600 text-white rounded-xl px-5 py-2.5 text-sm font-bold">Buscar</button>
+    </div>
+    <p class="mt-2 text-[11px] text-slate-400">Buscador en desarrollo · datos de esta página son demostrativos</p>
+  </section>
+
+  <section class="mt-10">
+    <div class="flex items-end justify-between mb-4">
+      <div><h2 class="text-lg sm:text-xl font-extrabold">Ejemplos de productos</h2><p class="text-xs text-slate-500 mt-1">Comparativas independientes de ejemplo</p></div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="producto.html?producto=vertex" class="group bg-white rounded-2xl border border-slate-200 p-4 hover:border-blue-300 hover:shadow-md transition">
+        <div class="h-52 bg-slate-50 rounded-xl flex items-center justify-center p-5"><img class="max-h-full max-w-full object-contain" src="https://cdn.idealo.com/folder/Product/208410/4/208410436/s11_produktbild_klein/bullpadel-vertex-05-2026.jpg" alt="Bullpadel Vertex 05 2026"></div>
+        <div class="pt-4"><span class="text-[11px] font-bold text-blue-600">BULLPADEL</span><h3 class="font-extrabold mt-1">Vertex 05 2026</h3><div class="mt-3 flex items-end justify-between"><div><span class="text-[11px] text-slate-500 block">Desde</span><strong class="text-xl text-emerald-700">208,90 €</strong></div><span class="text-xs font-bold text-blue-600">Ver ofertas →</span></div></div>
+      </a>
+      <a href="producto.html?producto=nox" class="group bg-white rounded-2xl border border-slate-200 p-4 hover:border-blue-300 hover:shadow-md transition">
+        <div class="h-52 bg-slate-50 rounded-xl flex items-center justify-center p-5"><img class="max-h-full max-w-full object-contain" src="https://contents.mediadecathlon.com/p3049208/k%24a5c9f7a8a91e476b69bb7bdadc20023f/picture.jpg?f=3000x0&format=auto" alt="NOX AT10 Genius 12K Alum XTREM 26"></div>
+        <div class="pt-4"><span class="text-[11px] font-bold text-blue-600">NOX</span><h3 class="font-extrabold mt-1">AT10 Genius 12K Alum XTREM 26</h3><div class="mt-3 flex items-end justify-between"><div><span class="text-[11px] text-slate-500 block">Desde</span><strong class="text-xl text-emerald-700">214,99 €</strong></div><span class="text-xs font-bold text-blue-600">Ver ofertas →</span></div></div>
+      </a>
+      <a href="producto.html?producto=head" class="group bg-white rounded-2xl border border-slate-200 p-4 hover:border-blue-300 hover:shadow-md transition">
+        <div class="h-52 bg-slate-50 rounded-xl flex items-center justify-center p-5"><img class="max-h-full max-w-full object-contain" src="https://www.time2padel.com/es/module/connectif/cnimg?id_image=215028&type=thickbox_default&fmt=webp&token=1234" alt="Cajón Head Padel Pro S+"></div>
+        <div class="pt-4"><span class="text-[11px] font-bold text-blue-600">HEAD</span><h3 class="font-extrabold mt-1">Cajón 24 botes Padel Pro S+</h3><div class="mt-3 flex items-end justify-between"><div><span class="text-[11px] text-slate-500 block">Desde</span><strong class="text-xl text-emerald-700">100,00 €</strong></div><span class="text-xs font-bold text-blue-600">Ver ofertas →</span></div></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="mt-10 grid sm:grid-cols-3 gap-3">
+    <div class="bg-white border border-slate-200 rounded-2xl p-5"><span class="material-symbols-outlined text-blue-600">search</span><h3 class="font-bold mt-3">Busca</h3><p class="text-xs text-slate-500 mt-1">Encuentra el producto que necesitas.</p></div>
+    <div class="bg-white border border-slate-200 rounded-2xl p-5"><span class="material-symbols-outlined text-blue-600">compare_arrows</span><h3 class="font-bold mt-3">Compara</h3><p class="text-xs text-slate-500 mt-1">Reunimos las ofertas en una misma vista.</p></div>
+    <div class="bg-white border border-slate-200 rounded-2xl p-5"><span class="material-symbols-outlined text-blue-600">open_in_new</span><h3 class="font-bold mt-3">Elige tienda</h3><p class="text-xs text-slate-500 mt-1">Consulta la oferta que te interese.</p></div>
+  </section>
+
+  <footer class="mt-12 pt-6 border-t border-slate-200 text-center text-[11px] text-slate-500">Kalisia es una demo de un futuro comparador de precios. Los productos, precios y tiendas mostrados tienen finalidad ilustrativa.</footer>
 </main>
-
-<!-- BOTTOM NAVIGATION BAR (Mobile First) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 bg-white/90 backdrop-blur-md border-t border-slate-200 shadow-lg">
-  <a href="index.html" class="flex flex-col items-center text-primary font-bold">
-    <span class="material-symbols-outlined text-[22px]">bolt</span>
-    <span class="text-[10px]">Explorar</span>
-  </a>
-  <a href="palas.html" class="flex flex-col items-center text-slate-500 hover:text-primary">
-    <span class="material-symbols-outlined text-[22px]">sports_tennis</span>
-    <span class="text-[10px]">Palas</span>
-  </a>
-  <a href="calzado.html" class="flex flex-col items-center text-slate-500 hover:text-primary">
-    <span class="material-symbols-outlined text-[22px]">steps</span>
-    <span class="text-[10px]">Zapatillas</span>
-  </a>
-  <a href="pelotas.html" class="flex flex-col items-center text-slate-500 hover:text-primary">
-    <span class="material-symbols-outlined text-[22px]">sports_baseball</span>
-    <span class="text-[10px]">Pelotas</span>
-  </a>
-</nav>
-
 </body>
 </html>
