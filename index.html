@@ -1,101 +1,126 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html class="light" lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="description" content="Price Comparator facilita el descubrimiento de productos de pádel y la comparación de ofertas entre tiendas online.">
-  <title>Price Comparator — Compara productos de pádel</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Kalisia | Radar y Comparador de Ofertas de Pádel</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "on-primary": "#ffffff", "surface": "#f9f9ff", "background": "#f9f9ff",
+            "inverse-surface": "#29313f", "secondary": "#006c46", "primary": "#0040df",
+            "on-surface": "#141c29", "outline-variant": "#c4c5d9", "outline": "#747688"
+          }
+        }
+      }
+    }
+</script>
+<style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24; display: inline-block; vertical-align: middle; line-height: 1; }
+</style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="index.html" aria-label="Inicio de Price Comparator"><span class="brand-mark">P</span><span>Price Comparator</span></a>
-      <nav>
-        <a href="#categories">Categorías</a>
-        <a href="#popular">Productos</a>
-        <a href="#how-it-works">Cómo funciona</a>
-      </nav>
-      <a class="header-cta" href="#categories">Explorar</a>
+<body class="bg-background text-on-surface font-sans antialiased min-h-screen pb-24 selection:bg-primary selection:text-on-primary">
+
+<!-- TOP APP BAR -->
+<header class="fixed top-0 left-0 w-full z-50 flex flex-col bg-inverse-surface text-on-primary px-4 py-2.5 shadow-md">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-lg">sports_tennis</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="text-lg font-extrabold tracking-tight leading-none">Kalisia</span>
+<span class="bg-primary/30 text-blue-200 border border-blue-400/30 text-[9px] font-extrabold px-1.5 py-0.5 rounded-full uppercase">Radar</span>
+</div>
+<span class="text-[10px] text-slate-400 tracking-wide">PADEL PRICE RADAR</span>
+</div>
+</div>
+<div class="bg-slate-800 text-slate-200 px-2 py-1 rounded-lg text-xs font-semibold border border-slate-700">EUR</div>
+</div>
+<div class="flex items-center gap-1.5 mt-2 pt-2 border-t border-slate-700/60">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+<p class="text-[11px] text-slate-300 truncate">Buscador en <strong class="text-white font-bold">28 tiendas verificadas</strong></p>
+</div>
+</header>
+<div class="h-24"></div>
+
+<main class="max-w-md mx-auto px-4 space-y-4">
+<!-- CATEGORY CHIPS HORIZONTAL SCROLL -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar -mx-4 px-4 py-1">
+  <a href="index.html" class="shrink-0 bg-inverse-surface text-on-primary px-3.5 py-2 rounded-xl text-xs font-semibold shadow-sm">Destacados</a>
+  <a href="palas.html" class="shrink-0 bg-white border border-outline-variant text-slate-700 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-slate-50">Palas (948)</a>
+  <a href="calzado.html" class="shrink-0 bg-white border border-outline-variant text-slate-700 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-slate-50">Zapatillas (312)</a>
+  <a href="pelotas.html" class="shrink-0 bg-white border border-outline-variant text-slate-700 px-3 py-2 rounded-xl text-xs font-semibold hover:bg-slate-50">Pelotas (84)</a>
+</div>
+
+<!-- PRODUCT CARD HOME -->
+<section class="space-y-4">
+  <article class="bg-white rounded-2xl border border-outline-variant p-4 shadow-sm space-y-3.5">
+    <div class="flex items-center justify-between">
+      <span class="inline-flex items-center gap-1 text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
+        <span class="material-symbols-outlined text-xs text-primary">storefront</span> En 14 tiendas
+      </span>
+      <span class="bg-rose-100 text-rose-700 font-bold text-xs px-2 py-0.5 rounded-full">-28%</span>
     </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="eyebrow">COMPARADOR DE PRODUCTOS</div>
-        <h1>Busca. Compara. <span>Elige mejor.</span></h1>
-        <p class="hero-copy">Encuentra productos de pádel y compara precios, características y tiendas antes de comprar.</p>
-        <div class="search-demo" role="search">
-          <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" placeholder="¿Qué estás buscando? Ej. Bullpadel Vertex 05" aria-label="Buscar producto">
-          <button id="searchButton" type="button">Buscar</button>
-        </div>
-        <p id="searchMessage" class="search-message" aria-live="polite"></p>
-        <div class="popular-searches"><span>También puedes buscar:</span><a href="#popular">Palas</a><a href="#popular">Zapatillas</a><a href="#popular">Paleteros</a><a href="#popular">Ropa</a></div>
+    <div class="grid grid-cols-3 gap-3 items-center">
+      <div class="col-span-1 bg-slate-50 rounded-xl p-2 flex items-center justify-center h-28 border border-slate-100">
+        <img class="max-h-full object-contain drop-shadow" src="https://images.unsplash.com/photo-1617083553728-4ad22e3ae7dc?w=400&auto=format&fit=crop&q=80" alt="Pala"/>
       </div>
-    </section>
-
-    <section class="section categories-section" id="categories">
-      <div class="container">
-        <div class="section-heading compact"><div><div class="eyebrow">EXPLORA</div><h2>Compra por categoría</h2></div><p>Empieza por el producto que buscas.</p></div>
-        <div class="category-grid">
-          <a class="category-card" href="#popular"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Palas de pádel" loading="lazy"><div><strong>Palas</strong><span>Comparar palas →</span></div></a>
-          <a class="category-card" href="#popular"><img src="https://www.joma-sport.com/dw/image/v2/BFRV_PRD/on/demandware.static/-/Sites-joma-masterCatalog/default/dw950807a0/images/medium/TOPEW2572OM_4.jpg?sh=900&sm=fit&sw=900" alt="Zapatillas de pádel" loading="lazy"><div><strong>Zapatillas</strong><span>Ver opciones →</span></div></a>
-          <a class="category-card" href="#popular"><img src="https://pdlclothing.myshopify.com/cdn/shop/files/CEB9BDFB-CBEC-4620-A951-10B0983025C0.jpg?v=1754602779&width=800" alt="Ropa de pádel" loading="lazy"><div><strong>Ropa</strong><span>Ver opciones →</span></div></a>
-          <a class="category-card" href="#popular"><img src="https://goldenpadel.co.uk/cdn/shop/files/freepik__create-a-highresolution-lifestyle-photo-of-a-padel__31922.png?v=1771792918&width=1000" alt="Paleteros de pádel" loading="lazy"><div><strong>Paleteros</strong><span>Ver opciones →</span></div></a>
-          <a class="category-card" href="#popular"><img src="https://padelac.fr/wp-content/uploads/sites/54/2025/06/padel-ac-image.jpg" alt="Accesorios de pádel" loading="lazy"><div><strong>Accesorios</strong><span>Ver opciones →</span></div></a>
-          <a class="category-card more-card" href="#how-it-works"><div class="more-icon">+</div><div><strong>Más categorías</strong><span>Próximamente →</span></div></a>
-        </div>
+      <div class="col-span-2 space-y-1">
+        <div class="text-[11px] font-bold text-primary">BULLPADEL • Pro Line</div>
+        <h3 class="text-sm font-bold text-slate-900 leading-tight">Bullpadel Hack 03 2024</h3>
       </div>
-    </section>
-
-    <section class="section comparison-section" id="popular">
-      <div class="container">
-        <div class="section-heading"><div><div class="eyebrow">EJEMPLO</div><h2>Una comparación de un vistazo</h2></div><p>Así puede verse un producto cuando se comparan sus ofertas.</p></div>
-        <div class="comparison-panel">
-          <div class="product-summary">
-            <div class="product-image-large"><img src="https://cdn.idealo.com/folder/Product/208410/4/208410436/s11_produktbild_klein/bullpadel-vertex-05-2026.jpg" alt="Bullpadel Vertex 05 2026"></div>
-            <div class="product-summary-info">
-              <span class="brand-label">BULLPADEL</span>
-              <h3>Vertex 05 2026</h3>
-              <p>Pala de pádel · Forma diamante · 365–375 g</p>
-              <div class="specs"><span>Carbono</span><span>Balance alto</span><span>Nivel avanzado</span></div>
-              <a class="view-product" href="#">Ver producto completo →</a>
-            </div>
-            <div class="price-highlight"><small>Desde</small><strong>190,00 €</strong><span>3 ofertas</span></div>
-          </div>
-          <div class="offers-head"><strong>Ofertas disponibles</strong><span>Ordenadas por precio</span></div>
-          <div class="offer-row best"><div class="store"><strong>Padel Nuestro</strong><span class="best-label">MEJOR PRECIO</span><small>Envío gratis · En stock</small></div><strong class="offer-price">190,00 €</strong><span class="total">Total 190,00 €</span><a class="offer-button" href="#">Ver oferta</a></div>
-          <div class="offer-row"><div class="store"><strong>Amazon</strong><small>Envío gratis · En stock</small></div><strong class="offer-price">199,00 €</strong><span class="total">Total 199,00 €</span><a class="offer-button" href="#">Ver oferta</a></div>
-          <div class="offer-row"><div class="store"><strong>Bullpadel</strong><small>Precio oficial · En stock</small></div><strong class="offer-price">249,99 €</strong><span class="total">Total 249,99 €</span><a class="offer-button secondary" href="#">Ver oferta</a></div>
-          <div class="comparison-foot">Ejemplo visual del proyecto. Los precios, el stock y las condiciones pueden cambiar.</div>
-        </div>
+    </div>
+    <div class="bg-slate-50 rounded-xl p-2.5 flex items-center justify-between border border-slate-200">
+      <div>
+        <span class="text-base text-secondary font-extrabold">189,95 €</span>
+        <span class="text-xs line-through text-slate-400 ml-1">265,00 €</span>
       </div>
-    </section>
+      <span class="text-xs font-bold text-slate-800">Padel Nuestro</span>
+    </div>
+    <a href="producto.html" class="w-full h-11 bg-primary text-on-primary rounded-xl font-semibold text-xs shadow-sm flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors">
+      <span>Comparar 14 tiendas</span>
+      <span class="material-symbols-outlined text-sm">arrow_forward</span>
+    </a>
+  </article>
+</section>
 
-    <section class="section products-section">
-      <div class="container">
-        <div class="section-heading compact"><div><div class="eyebrow">PRODUCTOS DESTACADOS</div><h2>Descubre productos</h2></div><a class="section-link" href="#">Ver todos →</a></div>
-        <div class="product-grid">
-          <article class="product-card"><div class="product-photo"><img src="https://cdn.idealo.com/folder/Product/208410/4/208410436/s11_produktbild_klein/bullpadel-vertex-05-2026.jpg" alt="Bullpadel Vertex 05 2026" loading="lazy"></div><div class="product-body"><span class="product-brand">BULLPADEL</span><h3>Vertex 05 2026</h3><div class="product-tags"><span>Diamante</span><span>365–375 g</span></div><div class="product-price"><small>Desde</small><strong>190,00 €</strong></div></div></article>
-          <article class="product-card"><div class="product-photo"><img src="https://contents.mediadecathlon.com/p3049208/k%24a5c9f7a8a91e476b69bb7bdadc20023f/picture.jpg?f=3000x0&format=auto" alt="NOX AT10 Genius 12K Alum XTREM 26" loading="lazy"></div><div class="product-body"><span class="product-brand">NOX</span><h3>AT10 Genius 12K Alum XTREM 26</h3><div class="product-tags"><span>Lágrima</span><span>360–375 g</span></div><div class="product-price"><small>Desde</small><strong>195,49 €</strong></div></div></article>
-          <article class="product-card"><div class="product-photo"><img src="https://cdn.idealo.com/folder/Product/205546/0/205546047/s11_produktbild_klein/adidas-metalbone-carbon-3-4.jpg" alt="adidas Metalbone Carbon 3.4" loading="lazy"></div><div class="product-body"><span class="product-brand">ADIDAS</span><h3>Metalbone Carbon 3.4</h3><div class="product-tags"><span>Diamante</span><span>Carbono</span></div><div class="product-price"><small>Desde</small><strong>127,53 €</strong></div></div></article>
-        </div>
-        <p class="catalog-note">Precios de referencia consultados el 13/09/2026. Esta página es una demo del proyecto y no representa ofertas propias.</p>
-      </div>
-    </section>
+<!-- FOOTER COMPLIANCE AWIN -->
+<footer class="pt-4 pb-4 space-y-2 border-t border-slate-200 text-center">
+<p class="text-[10px] text-slate-500 px-2 leading-tight">
+  <strong>Divulgación de Afiliación:</strong> Kalisia participa en redes de marketing de afiliación (Awin y CJ Affiliate). Recibimos comisiones por compras sin coste extra para ti.
+</p>
+<p class="text-[11px] text-slate-500">Kalisia: Motor independiente de auditoría de precios.</p>
+</footer>
+</main>
 
-    <section class="how-section" id="how-it-works">
-      <div class="container how-grid">
-        <div><div class="eyebrow">CÓMO FUNCIONA</div><h2>Menos tiempo buscando.<br>Más tiempo eligiendo.</h2></div>
-        <div class="how-steps"><div><b>01</b><strong>Busca</strong><p>Encuentra un producto, una marca o una categoría.</p></div><div><b>02</b><strong>Compara</strong><p>Consulta precios, características, variantes y tiendas.</p></div><div><b>03</b><strong>Elige</strong><p>Accede a la oferta que mejor encaje con lo que buscas.</p></div></div>
-      </div>
-    </section>
+<!-- BOTTOM NAVIGATION BAR (Mobile First) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-2 bg-white/90 backdrop-blur-md border-t border-slate-200 shadow-lg">
+  <a href="index.html" class="flex flex-col items-center text-primary font-bold">
+    <span class="material-symbols-outlined text-[22px]">bolt</span>
+    <span class="text-[10px]">Explorar</span>
+  </a>
+  <a href="palas.html" class="flex flex-col items-center text-slate-500 hover:text-primary">
+    <span class="material-symbols-outlined text-[22px]">sports_tennis</span>
+    <span class="text-[10px]">Palas</span>
+  </a>
+  <a href="calzado.html" class="flex flex-col items-center text-slate-500 hover:text-primary">
+    <span class="material-symbols-outlined text-[22px]">steps</span>
+    <span class="text-[10px]">Zapatillas</span>
+  </a>
+  <a href="pelotas.html" class="flex flex-col items-center text-slate-500 hover:text-primary">
+    <span class="material-symbols-outlined text-[22px]">sports_baseball</span>
+    <span class="text-[10px]">Pelotas</span>
+  </a>
+</nav>
 
-    <footer class="site-footer"><div class="container footer-top"><div><a class="brand" href="index.html"><span class="brand-mark">P</span><span>Price Comparator</span></a><p>Descubrimiento y comparación de productos.</p></div><div class="footer-links"><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a><a href="mailto:hello@example.com">Contacto</a></div></div><div class="container copyright">© 2026 Price Comparator · Proyecto en desarrollo</div></footer>
-  </main>
-  <script src="script.js"></script>
 </body>
 </html>
